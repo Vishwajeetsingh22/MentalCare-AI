@@ -47,6 +47,8 @@ class LifestyleFragment : Fragment() {
     }
 
     private fun calculateLifestyleRisk(sleep: Float, work: Float, screen: Float, ex: Int) {
+        val appCtx = context?.applicationContext ?: return
+
         lifecycleScope.launch(Dispatchers.IO) {
             var score = 40.0
             if (sleep < 6.0f) score += (6.0f - sleep) * 12.0
@@ -56,7 +58,7 @@ class LifestyleFragment : Fragment() {
 
             val finalScore = score.coerceIn(15.0, 95.0).toInt()
 
-            val db = MentalCareDatabase.getDatabase(requireContext())
+            val db = MentalCareDatabase.getDatabase(appCtx)
             db.checkInDao().insertLifestyle(
                 LifestyleEntity(
                     sleepHrs = sleep,
@@ -70,8 +72,10 @@ class LifestyleFragment : Fragment() {
             )
 
             withContext(Dispatchers.Main) {
-                binding.cardLifestyleResult.visibility = View.VISIBLE
-                binding.txtLifestyleScore.text = getString(R.string.lifestyle_risk_format, finalScore)
+                val b = _binding ?: return@withContext
+
+                b.cardLifestyleResult.visibility = View.VISIBLE
+                b.txtLifestyleScore.text = getString(R.string.lifestyle_risk_format, finalScore)
 
                 val factors = StringBuilder()
                 if (sleep < 6.0f) factors.append(getString(R.string.low_sleep_factor, sleep)).append("\n")
@@ -79,8 +83,8 @@ class LifestyleFragment : Fragment() {
                 if (ex < 20) factors.append(getString(R.string.low_exercise_factor, ex)).append("\n")
                 if (factors.isEmpty()) factors.append(getString(R.string.healthy_lifestyle))
 
-                binding.txtLifestyleFactors.text = factors.toString().trim()
-                Toast.makeText(requireContext(), R.string.lifestyle_logged, Toast.LENGTH_SHORT).show()
+                b.txtLifestyleFactors.text = factors.toString().trim()
+                Toast.makeText(appCtx, R.string.lifestyle_logged, Toast.LENGTH_SHORT).show()
             }
         }
     }

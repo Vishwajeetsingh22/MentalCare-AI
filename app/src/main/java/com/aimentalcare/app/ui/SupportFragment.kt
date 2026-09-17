@@ -51,7 +51,7 @@ class SupportFragment : Fragment() {
 
     private fun startBreathingTimer() {
         isTimerRunning = true
-        binding.btnStartBreathing.text = getString(R.string.stop_exercise)
+        _binding?.btnStartBreathing?.text = getString(R.string.stop_exercise)
 
         val phases = listOf(
             getString(R.string.inhale_phase),
@@ -60,20 +60,22 @@ class SupportFragment : Fragment() {
             getString(R.string.hold_empty_phase)
         )
         
-        timer = object : CountDownTimer(300000, 1000) { // 5 minutes (300,000 ms)
+        timer = object : CountDownTimer(300000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
+                val b = _binding ?: return
                 val secRemaining = (millisUntilFinished / 1000).toInt()
                 val min = secRemaining / 60
                 val sec = secRemaining % 60
-                binding.txtBreathingTimer.text = getString(R.string.timer_format, min, sec)
+                b.txtBreathingTimer.text = getString(R.string.timer_format, min, sec)
 
                 val phaseIdx = (300 - secRemaining) % 16 / 4
-                binding.txtBreathingPhase.text = phases[phaseIdx]
+                b.txtBreathingPhase.text = phases[phaseIdx]
             }
 
             override fun onFinish() {
-                binding.txtBreathingTimer.text = getString(R.string.timer_format, 0, 0)
-                binding.txtBreathingPhase.text = getString(R.string.exercise_complete)
+                val b = _binding ?: return
+                b.txtBreathingTimer.text = getString(R.string.timer_format, 0, 0)
+                b.txtBreathingPhase.text = getString(R.string.exercise_complete)
                 stopBreathingTimer()
             }
         }.start()
@@ -82,7 +84,7 @@ class SupportFragment : Fragment() {
     private fun stopBreathingTimer() {
         timer?.cancel()
         isTimerRunning = false
-        binding.btnStartBreathing.text = getString(R.string.start_breathing)
+        _binding?.btnStartBreathing?.text = getString(R.string.start_breathing)
     }
 
     override fun onDestroyView() {

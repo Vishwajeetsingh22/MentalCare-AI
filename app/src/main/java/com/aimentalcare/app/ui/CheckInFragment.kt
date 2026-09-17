@@ -51,6 +51,8 @@ class CheckInFragment : Fragment() {
     }
 
     private fun performAnalysis(userText: String) {
+        val appCtx = context?.applicationContext ?: return
+
         lifecycleScope.launch(Dispatchers.IO) {
             var level = "LOW"
             var desc = "Normal"
@@ -61,7 +63,6 @@ class CheckInFragment : Fragment() {
             var recommendations = listOf<String>()
 
             try {
-                // Try REST API backend endpoint
                 val res = ApiClient.service.analyzeText(TextAnalyzeRequest(text = userText))
                 if (res.isSuccessful && res.body() != null) {
                     val body = res.body()!!
@@ -73,7 +74,6 @@ class CheckInFragment : Fragment() {
                     isCrisis = body.isCrisis
                     recommendations = body.recommendations
                 } else {
-                    // Local Engine fallback
                     val local = LocalNLPEngine.analyzeText(userText)
                     level = local.stressLevel
                     desc = local.statusDescription
@@ -84,7 +84,6 @@ class CheckInFragment : Fragment() {
                     recommendations = local.recommendations
                 }
             } catch (e: Exception) {
-                // Local Engine fallback if offline
                 val local = LocalNLPEngine.analyzeText(userText)
                 level = local.stressLevel
                 desc = local.statusDescription
@@ -95,8 +94,7 @@ class CheckInFragment : Fragment() {
                 recommendations = local.recommendations
             }
 
-            // Save to Room DB
-            val db = MentalCareDatabase.getDatabase(requireContext())
+            val db = MentalCareDatabase.getDatabase(appCtx)
             db.checkInDao().insertCheckIn(
                 CheckInEntity(
                     userText = userText,
@@ -110,22 +108,23 @@ class CheckInFragment : Fragment() {
                 )
             )
 
-            // Trigger Notification if High or Critical
             if (score >= 75 || isCrisis) {
                 NotificationHelper.sendAlertNotification(
-                    requireContext(),
+                    appCtx,
                     getString(R.string.high_stress_notification_title),
                     getString(R.string.high_stress_notification_message_format, level, score)
                 )
             }
 
             withContext(Dispatchers.Main) {
-                displayResult(level, desc, score, conf, indicators, isCrisis, recommendations)
+                val b = _binding ?: return@withContext
+                displayResult(b, level, desc, score, conf, indicators, isCrisis, recommendations)
             }
         }
     }
 
     private fun displayResult(
+        b: FragmentCheckinBinding,
         level: String,
         desc: String,
         score: Int,
@@ -134,10 +133,10 @@ class CheckInFragment : Fragment() {
         isCrisis: Boolean,
         recommendations: List<String>
     ) {
-        binding.cardResultContainer.visibility = View.VISIBLE
-        binding.txtResultConfidence.text = getString(R.string.confidence_format, conf.toInt())
-        binding.txtResultLevel.text = getString(R.string.result_level_format, level, score)
-        binding.txtResultDescription.text = desc
+        b.cardResultContainer.visibility = View.VISIBLE
+        b.txtResultConfidence.text = getString(R.string.confidence_format, conf.toInt())
+        b.txtResultLevel.text = getString(R.string.result_level_format, level, score)
+        b.txtResultDescription.text = desc
 
         val badgeColor = when (level) {
             "LOW" -> "#10B981"
@@ -145,20 +144,20 @@ class CheckInFragment : Fragment() {
             "HIGH" -> "#EF4444"
             else -> "#991B1B"
         }
-        binding.txtResultLevel.setTextColor(badgeColor.toColorInt())
+        b.txtResultLevel.setTextColor(badgeColor.toColorInt())
 
         val indText = StringBuilder()
         indicators.forEach { indText.append("• ").append(it).append("\n") }
-        binding.txtResultIndicators.text = indText.toString().trim()
+        b.txtResultIndicators.text = indText.toString().trim()
 
         val recText = StringBuilder()
         recommendations.forEach { recText.append("• ").append(it).append("\n") }
-        binding.txtResultRecommendations.text = recText.toString().trim()
+        b.txtResultRecommendations.text = recText.toString().trim()
 
         if (isCrisis) {
-            binding.bannerCrisisAlert.visibility = View.VISIBLE
+            b.bannerCrisisAlert.visibility = View.VISIBLE
         } else {
-            binding.bannerCrisisAlert.visibility = View.GONE
+            b.bannerCrisisAlert.visibility = View.GONE
         }
     }
 
