@@ -340,50 +340,42 @@ The application includes:
 
 ## 1. Splash Screen
 
+<img width="1080" height="2400" alt="WhatsApp Image 2026-09-18 at 9 27 15 PM" src="https://github.com/user-attachments/assets/f18d72c1-1f00-4c85-8180-2b0c6cb5a8a3" />
 ![Splash Screen](screenshots/splash.png)
 
 ## 2. Login Screen
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 16 PM" src="https://github.com/user-attachments/assets/a0a0ac6f-e7a2-4481-b1ea-02f1d2f52190" />
 ![Login Screen](screenshots/login.png)
 
 ## 3. Registration Screen
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 16 PM (2)" src="https://github.com/user-attachments/assets/3c02e8c9-23de-49aa-9966-63fb00984b1d" />
 ![Registration Screen](screenshots/register.png)
 
 ## 4. Home Dashboard
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 16 PM (1)" src="https://github.com/user-attachments/assets/834b9abb-a06f-41f5-90d7-4a436d23425a" />
 ![Home Dashboard](screenshots/dashboard.png)
 
 ## 5. AI Mental Check-in
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 17 PM" src="https://github.com/user-attachments/assets/acb3f286-83ed-4c32-81c8-ae593980dee7" />
 ![AI Mental Check-in](screenshots/checkin.png)
 
 ## 6. AI Analysis
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 18 PM" src="https://github.com/user-attachments/assets/4c7663a5-1d3e-4e05-abd0-7b8503cf9219" />
 ![AI Analysis](screenshots/analysis.png)
 
 ## 7. Stress Result
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 17 PM (1)" src="https://github.com/user-attachments/assets/671c0a2e-864d-4af8-bd98-2561539610cd" />
 ![Stress Result](screenshots/stress-result.png)
-
-## 8. Stress History
-
-![Stress History](screenshots/history.png)
-
-## 9. Stress Trend
-
-![Stress Trend](screenshots/trend.png)
-
-## 10. Recommendations
-
-![Recommendations](screenshots/recommendations.png)
-
-## 11. Notifications
-
-![Notifications](screenshots/notifications.png)
 
 ## 12. Profile
 
+<img width="720" height="1600" alt="WhatsApp Image 2026-09-18 at 9 27 17 PM (2)" src="https://github.com/user-attachments/assets/dd8f2faf-d73f-4048-9b52-c87e315ce714" />
 ![Profile](screenshots/profile.png)
 
 ---
