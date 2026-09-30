@@ -34,7 +34,11 @@ def home():
         "chat_endpoint": "/api/chat",
         "prediction_endpoint": "/predict"
     }), 200
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
 @app.route('/predict', methods=['POST'])
 @app.route('/checkin', methods=['POST'])
 @app.route('/api/analyze_text', methods=['POST'])
