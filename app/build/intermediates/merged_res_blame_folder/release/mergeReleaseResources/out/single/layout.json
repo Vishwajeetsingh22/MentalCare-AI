@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_profile.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/activity_main.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/activity_login.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_dashboard.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_support.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_support.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_analytics.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_analytics.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_about.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_settings.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_checkin.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_checkin.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/fragment_lifestyle.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_lifestyle.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/activity_splash.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeReleaseResources-3:/layout/activity_register.xml",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_register.xml"
+    }
+]

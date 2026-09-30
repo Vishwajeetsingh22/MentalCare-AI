@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_activity_register.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_dashboard.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_dashboard.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/drawable_bg_medical_card.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/drawable/bg_medical_card.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_support.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_support.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_settings.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/drawable_ic_logo.png.flat",
+        "source": "com.aimentalcare.app-main-5:/drawable/ic_logo.png"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_about.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_lifestyle.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_lifestyle.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_activity_main.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/drawable_bg_ai_button.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/drawable/bg_ai_button.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_profile.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_checkin.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_checkin.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_fragment_analytics.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/fragment_analytics.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/drawable_bg_button_green.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/drawable/bg_button_green.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_activity_login.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/layout_activity_splash.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.aimentalcare.app-main-5:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/drawable_bg_ai_chip.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/drawable/bg_ai_chip.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-release-4:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.aimentalcare.app-main-5:/menu/bottom_nav_menu.xml"
+    }
+]

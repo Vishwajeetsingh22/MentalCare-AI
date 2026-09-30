@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\fragment_analytics.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\fragment_analytics.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeDebugResources-3:/layout/fragment_checkin.xml",
+        "source": "com.aimentalcare.app-main-6:/layout/fragment_checkin.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeDebugResources-3:/layout/fragment_about.xml",
+        "source": "com.aimentalcare.app-main-6:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\fragment_support.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\fragment_support.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeDebugResources-3:/layout/fragment_settings.xml",
+        "source": "com.aimentalcare.app-main-6:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeDebugResources-3:/layout/fragment_profile.xml",
+        "source": "com.aimentalcare.app-main-6:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.aimentalcare.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.aimentalcare.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\fragment_lifestyle.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\fragment_lifestyle.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\fragment_checkin.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\fragment_checkin.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-mergeDebugResources-3:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\admin\\.gradle\\daemon\\8.7\\com.aimentalcare.app-main-6:\\layout\\activity_splash.xml"
+    }
+]
