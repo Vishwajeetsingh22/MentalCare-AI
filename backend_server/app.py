@@ -35,7 +35,11 @@ def home():
         "prediction_endpoint": "/predict"
     }), 200
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
 =======
     
 >>>>>>> Stashed changes
