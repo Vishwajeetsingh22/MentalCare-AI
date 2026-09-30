@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # MentalCare AI – Real-Time AI-Powered Stress & Burnout Detector
 
 > *"Understand. Relax. Thrive."*
