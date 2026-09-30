@@ -24,19 +24,16 @@ CORS(app)
 engine = NLPEngine()
 chat_engine = ChatEngine()
 
-@app.route('/health', methods=['GET'])
-def health():
+@app.route("/", methods=["GET"])
+def home():
     return jsonify({
-        "status": "OK",
         "app_name": "MentalCare AI",
-        "tagline": "Understand. Relax. Thrive.",
-        "team_members": [
-            "Joylyn Princita Fernandes (25MCAR0099)",
-            "Syed Faizan Pasha (25MCAR0138)",
-            "Vishwajeet Singh (25MCAR0219)"
-        ],
-        "version": "2.0.0"
-    })
+        "status": "running",
+        "message": "Welcome to MentalCare AI Backend",
+        "health_endpoint": "/health",
+        "chat_endpoint": "/api/chat",
+        "prediction_endpoint": "/predict"
+    }), 200
 
 @app.route('/predict', methods=['POST'])
 @app.route('/checkin', methods=['POST'])
